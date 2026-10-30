@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#142b4a" name="theme-color" />
+    <title>Sign in | StudentHub</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" />
+    <script defer="" src="js/login.js"></script>
+  </head>
+  <body class="login-page">
+    <main class="login-card">
+      <a aria-label="StudentHub" class="brand login-brand" href="index.html">
+        <span class="brand-mark">S</span>
+        <span>Student<span class="brand-accent">Hub</span></span>
+      </a>
+      <p class="eyebrow">YOUR LEARNING SPACE</p>
+      <h1>Welcome back</h1>
+      <p class="login-intro">Sign in to explore courses, study materials, and more.</p>
+      <form data-login-form>
+        <label for="login-email">Email address</label>
+        <input
+          autocomplete="email"
+          id="login-email"
+          name="email"
+          placeholder="you@example.com"
+          required
+          type="email"
+        />
+        <label for="login-password">Password</label>
+        <input
+          autocomplete="current-password"
+          id="login-password"
+          minlength="6"
+          name="password"
+          placeholder="At least 6 characters"
+          required
+          type="password"
+        />
+        <p class="login-hint">Demo access only: use any valid email and a password of 6 or more characters.</p>
+        <p aria-live="polite" class="login-message" data-login-message></p>
+        <button class="button login-button" type="submit">Sign in <span aria-hidden="true">→</span></button>
+      </form>
+      <p class="login-note">This frontend demo does not send or save your credentials.</p>
+    </main>
+  </body>
+</html>
